@@ -19,7 +19,7 @@ public class MainApp {
         try {
             ctx.addRoutes(routeBuild);
             ctx.start();
-            Thread.sleep(1 * 1000 * 60);
+            Thread.sleep(5 * 1000 * 60);
             ctx.stop();
         } catch (Exception e) {
             e.printStackTrace();
