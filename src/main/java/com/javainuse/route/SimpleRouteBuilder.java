@@ -17,7 +17,7 @@ public class SimpleRouteBuilder extends RouteBuilder {
         from("direct:test2")
                 .process(new Processor() {
                     public void process(Exchange arg0) throws Exception {
-                        //Some logic here
+                        System.out.println(arg0.getIn().getBody().toString());
                     }
                 });
     }
